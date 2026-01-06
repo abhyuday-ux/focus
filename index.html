@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFlow | Professional Study Analytics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ['Inter', 'sans-serif'],
+            },
+            animation: {
+              'spin-slow': 'spin 8s linear infinite',
+            },
+            transitionProperty: {
+              'height': 'height',
+              'spacing': 'margin, padding',
+            }
+          }
+        },
+        safelist: [
+          'bg-orange-500', 'bg-blue-500', 'bg-emerald-500', 'bg-rose-500', 'bg-amber-400',
+          'text-orange-500', 'text-blue-500', 'text-emerald-500', 'text-rose-500', 'text-amber-400',
+          'border-orange-500', 'border-blue-500', 'border-emerald-500', 'border-rose-500', 'border-amber-400',
+          'border-orange-500/50', 'border-blue-500/50', 'border-emerald-500/50', 'border-rose-500/50', 'border-amber-400/50',
+          'border-orange-500/30', 'border-blue-500/30', 'border-emerald-500/30', 'border-rose-500/30', 'border-amber-400/30',
+          'bg-orange-500/10', 'bg-blue-500/10', 'bg-emerald-500/10', 'bg-rose-500/10', 'bg-amber-400/10',
+          'shadow-orange-500/30', 'shadow-blue-500/30', 'shadow-emerald-500/30', 'shadow-rose-500/30', 'shadow-amber-400/30',
+          'shadow-orange-500/20', 'shadow-blue-500/20', 'shadow-emerald-500/20', 'shadow-rose-500/20', 'shadow-amber-400/20',
+          'shadow-orange-500/10', 'shadow-blue-500/10', 'shadow-emerald-500/10', 'shadow-rose-500/10', 'shadow-amber-400/10',
+          'ring-orange-500', 'ring-blue-500', 'ring-emerald-500', 'ring-rose-500', 'ring-amber-400',
+        ]
+      }
+    </script>
+    <style>
+        :root {
+            --accent-color: #f97316;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #020617;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 20px;
+            border: 2px solid #0f172a;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+        /* Selection color */
+        ::selection {
+            background-color: rgba(249, 115, 22, 0.3);
+            color: white;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-slate-950 text-slate-100">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
